@@ -1,7 +1,0 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import numpy as np
-%matplotlib inline
-
-crime_data=pd.read_csv("crime_data.csv")
-print(crime_data.head())
