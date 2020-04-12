@@ -1,0 +1,33 @@
+#side_bar{
+    height: 600px;
+    background-color: rgb(73, 74, 75);
+    width: 200px;
+    color: aliceblue;
+    font-family: 'Averia Gruesa Libre';font-size: 22px;
+    font-size: large;
+    font-weight:lighter;
+    justify-content: center;
+    padding-left: 5px;
+    padding-top: 10px;
+    
+    
+}
+body{
+    font-family: 'Montserrat';
+}
+.links{
+width: 190px;
+text-align: center;
+border: none;
+color: wheat;
+align-content: space-between;
+
+}
+
+.seprator{
+background-color: rgb(25, 26, 25);
+}
+
+a{
+color: rgb(233, 184, 184);
+}

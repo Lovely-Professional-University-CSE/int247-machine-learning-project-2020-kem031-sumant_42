@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Visualization</title>
+<style>
+    .img_show{
+        background-color: rgb(238, 231, 231);
+        justify-content: center;
+    }
+    hr{
+        border: 2px solid rgb(129, 127, 127);
+        border-radius: 10px;
+        
+    }
+
+    img{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<br>
+<h1 class="display-4">Visualization and Predictions Graphs</h1>
+<br>
+<div class="img_show">
+    <center>
+        <img src="{{ url_for('static',filename='img/C1.PNG')}}">
+    </center>
+    <hr>
+
+    <center>
+        <img src="{{ url_for('static',filename='img/c2.PNG')}}">
+    </center>
+    <hr>
+
+    <center>
+        <img src="{{ url_for('static',filename='img/c4.PNG')}}">
+    </center>
+    <hr>
+
+    <center>
+        <img src="{{ url_for('static',filename='img/c5.PNG')}}">
+    </center>
+    <hr>
+
+    <center>
+        <img src="{{ url_for('static',filename='img/c6.PNG')}}">
+    </center>
+    <hr>
+
+    <center>
+        <img src="{{ url_for('static',filename='img/c7.PNG')}}">
+    </center>
+    <hr>
+
+    <center>
+        <img src="{{ url_for('static',filename='img/c8.PNG')}}">
+    </center>
+    <hr>
+
+    <center>
+        <img src="{{ url_for('static',filename='img/c9.PNG')}}">
+    </center>
+    <hr>
+
+    <center>
+        <img src="{{ url_for('static',filename='img/c10.PNG')}}">
+    </center>
+    <hr>
+
+
+</div>
+
+
+
+{% endblock %}

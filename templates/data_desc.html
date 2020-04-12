@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Data Description</title>
+<style>
+
+    .list_head{
+        background-color: rgb(54, 54, 54);
+        color: white;
+        font-size: 30px;
+    }
+    .small{
+        font-size: 20px;
+    }
+
+    table, th, td {
+  border: 1px solid black;
+}
+
+.content{
+    margin-left: 10px;
+    font-size: large;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  margin: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+{% endblock %}
+
+{% block body %}
+<br>
+<h1 class="display-4">Description About Data</h1>
+<br>
+{% if data!=None %}
+ <pre class="content">{{data}}</pre>
+ <div class='content'>
+     <br>
+    <h4 style="background-color: rgb(233, 229, 226);width: 140px;font-weight: bolder;">Inspiration</h4>
+    <br>
+    <pre>{{ins}}</pre>
+
+ </div>
+
+
+{% endif %}
+<br>
+<hr style="border: 2px solid rgb(129, 127, 127);
+border-radius: 10px;">
+
+<div class="row" style="padding: 20px;">
+    <div class="column" style="border-right: 2px solid rgb(185, 148, 148);">
+      <img src="{{ url_for('static',filename='img/d1.PNG')}}"  >
+    </div>
+    <div class="column" style="margin-left: 150px;">
+      <img src="{{ url_for('static',filename='img/c2.PNG')}}" >
+    </div>
+    
+  </div>
+
+
+
+
+
+{% endblock %}
